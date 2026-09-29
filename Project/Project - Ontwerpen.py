@@ -1,6 +1,7 @@
 from djitellopy import Tello
 
-tello = Tello(); tello.connect()
+tello = Tello()
+tello.connect()
 
 battery = tello.get_battery()
 temperature = tello.get_temperature()
