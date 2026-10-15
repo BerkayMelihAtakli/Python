@@ -1,11 +1,12 @@
-disk_free = 55
-cpu_load  = 70
+disk_free = 21
+cpu_load  = 99
 
 # TODO: gebruik chained comparison voor safe_to_backup
-safe_to_backup = ???   # 20 <= disk_free < 100 AND 0 <= cpu_load < 80
+safe_to_backup = 20 <= disk_free <= 100 and 0 <= cpu_load <= 100
+
 
 # TODO: gebruik ternary om de status te omschrijven
-status = ???   # "veilig" als safe_to_backup, anders "onveilig"
+status = "veilig" if safe_to_backup else "onveilig"
 
 # TODO: schrijf in één f-string: vrije ruimte %, cpu %, status
-print(f???)
+print(f"Vrije schrijfruimte: {disk_free}, cpu_load: {cpu_load}, status: {status}")
