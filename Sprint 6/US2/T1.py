@@ -5,8 +5,5 @@ class Player:
         self.lives = lives
         self.score = score
 
-player1 = Player()
-player2 = Player()
-player3 = Player()
-
-Berkay = Player
+berkay = Player("Berkay",2,60)
+print(berkay.name)
