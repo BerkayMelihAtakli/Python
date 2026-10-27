@@ -5,14 +5,14 @@ class Player:
         self.lives = lives
         self.score = score
 
-berkay = Player("Berkay",2,60)
-yaser = Player("Yaser",2,60)
-orkun = Player("Orkun",2,60)
-print(berkay.name)
-print(yaser.name)
-print(orkun.name)
+player1 = Player("Berkay",2,60)
+player2 = Player("Yaser",2,60)
+player3 = Player("Orkun",2,60)
+print(player1.name)
+print(player2.name)
+print(player3.name)
 
 
 #  orkun = Player(,2,60)
 #                    ^
-# SyntaxError: invalid syntax
+# SyntaxError: invalid sy
