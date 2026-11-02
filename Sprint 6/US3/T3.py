@@ -10,7 +10,7 @@ class Player:
 
         self.width = 40
         self.height = 40
-        self.color = "white"
+        self.color = (255, 255, 255)
 
 
 class Enemy:
@@ -22,21 +22,19 @@ class Enemy:
 
         self.width = 40
         self.height = 40
-        self.color = (255, 50, 50)
+        self.color = (255, 80, 80)
 
-player = Player(220, 550, 5)
+
+player = Player(x=220, y=550, speed=15)
 
 enemies = []
-
 for _ in range(10):
-    x_position = random.randint(0, 450)
-    y_position = random.randint(0, 450)
-    speed = random.randint(0, 10)
-    enemies.append(Enemy(x=x_position, y=y_position, speed=speed))
+    x_pos = random.randint(-100, 100)
+    y_pos = random.randint(-100, 100)
+    speed = random.randint(2, 6)
+    enemies.append(Enemy(x=x_pos, y=y_pos, speed=speed))
 
-enemies[2].alive = False
-enemies[5].alive = False
-
+enemies[1].alive = False
 
 living_enemies = 0
 for enemy in enemies:
@@ -44,15 +42,8 @@ for enemy in enemies:
         living_enemies += 1
 
 
-print(f"Living enemies: {living_enemies} from the {len(enemies)} enemies")
-print(f"Status enemie 2: {enemies[2].alive}")
-print(f"Status enemie 3: {enemies[3].alive}")
+print(f"Living enemies: {living_enemies}, from the {len(enemies)} enemies")
+print(f"Status enemies 1 = {enemies[1].alive}")
 
 run_game(player, enemies)
-
-
-
-
-
-
 
