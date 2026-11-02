@@ -17,6 +17,8 @@ class Player:
 Player1 = Player(10, 20, 30, True)
 Player1.print_info()
 
+print("\n" + "=" * 40 + "\n")
+
 Player1.alive = False
 Player1.print_info()
 
