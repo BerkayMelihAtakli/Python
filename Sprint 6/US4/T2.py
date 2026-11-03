@@ -9,8 +9,8 @@ wave1.enemies.append("Goblin")
 wave1.enemies.append("Troll")
 wave1.enemies.append("Orc")
 
-print(f"wave1 enemies",  wave1.enemies)
-print(f"numbers of wave1 enemies =", len(wave1.enemies))
+print(f"wave1 enemies, {wave1.enemies}")
+print(f"numbers of wave1 enemies = {len(wave1.enemies)}")
 
 wave2 = Wave()
 
