@@ -12,7 +12,7 @@ player3_name = "John"
 player3_lives = 1
 player3_score = 10
 
-# Speler 1 scoort 10 punten
+# Speler 1 scores 10 punten
 
 player1_score = player1_score + 10
 player2_lives = player2_lives - 1
