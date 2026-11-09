@@ -23,3 +23,6 @@ fall(player)
 
 print(f"{enemy1.y}")
 print(f"{player.y}")
+
+# De functie fall() controleert niet bij welk soort object hij hoort.
+# Dit geeft geen foutmelding in Python, maar veroorzaakt wel onbedoelde logische fouten.
