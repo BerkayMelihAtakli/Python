@@ -13,4 +13,4 @@ p.show()
 q = Player()
 print(q.__health)
 
-# In taak 1 was _health met één underscore alleen een afspraak
+# In taak 1 was _health met één _
