@@ -12,5 +12,15 @@ class Speaker:
 
 speaker = Speaker()
 
-speaker.get_volume()(speaker.set_volume() +)
-print(speaker.get_volume)
+speaker.set_volume(speaker.get_volume() + 10)
+print(speaker.get_volume())
+
+speaker.volume = 80
+print(speaker.get_volume())
+print(speaker.volume)
+
+
+
+# Er zijn nu twee losse waarden (attributen) op het object:
+# - __volume (intern opgeslagen als _Speaker__volume) met waarde 20. Dit is het echte volume.
+# - volume met waarde 80.
