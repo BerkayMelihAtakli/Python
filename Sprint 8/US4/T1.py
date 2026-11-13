@@ -24,4 +24,3 @@ print(speaker.volume)
 # Er zijn nu twee losse waarden (attributen) op het object:
 # - __volume (intern opgeslagen als _Speaker__volume) met waarde 20. Dit is het echte volume.
 # - volume met waarde 80.
-ergertjk
