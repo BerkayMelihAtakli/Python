@@ -16,9 +16,12 @@ pets = [rex, mia]
 
 print(rex)
 print(f"My pet: {rex}")
+
 print(pets)
 print(repr(rex))
 
 
+# - __str__ wordt gebruikt wanneer je een object omzet naar een leesbare tekst voor eindgebruikers.
 
-# Wanneer je een lijst print (print(pets)), gebruikt Python niet de __str__ methode
+
+# - __repr__ wordt gebruikt voor ontwikkelaars en bij debugging
